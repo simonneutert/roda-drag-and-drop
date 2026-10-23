@@ -1,0 +1,32 @@
+  <div id="drop-zone">
+      <div class="drop-zone-content">
+        <p>Drop files or a folder here, or choose below.</p>
+        <div class="picker-actions">
+          <button id="choose-files-btn" type="button">Choose files</button>
+          <button id="choose-folder-btn" type="button">Choose folder</button>
+        </div>
+        <input
+          type="file"
+          id="file-input"
+          name="files[]"
+          multiple
+          accept="*/*"
+        />
+        <input
+          type="file"
+          id="folder-input"
+          name="folder[]"
+          multiple
+          webkitdirectory
+          directory
+          accept="*/*"
+        />
+      </div>
+    </div>
+
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+      <ul id="preview"></ul>
+      <button type="submit">Upload</button>
+    </form>
+
+    <button id="clear-btn" type="button">Clear</button>

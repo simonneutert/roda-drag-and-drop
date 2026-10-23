@@ -1,0 +1,4 @@
+[tools]
+deno = "latest"
+node = "26"
+ruby = "4"
